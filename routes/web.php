@@ -26,10 +26,6 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    $a = 1;
-    
-    dd('movie-db');
-
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
